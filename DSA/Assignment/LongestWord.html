@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Question :- Find the largest word from the given string
+      //  1. create a function
+      //  2. Convert string into the array form by the split
+      //  3. take a empty string name i.e LargestWord for the comparison and store the longest
+      //  4. Run a loop
+      //  5. Each iterate element length compare to the LargestWord length
+      //  6. if current word length is greater than LargestWord.length
+      //  7. And than current element assign to the LargestWord
+
+      function String1(input) {
+        let NewArr = input.split(" ");
+        console.log(NewArr);
+        let LargestWord = "";
+        for (let i = 0; i < NewArr.length; i++) {
+          if (NewArr[i].length > LargestWord.length) {
+            LargestWord = NewArr[i];
+          }
+        }
+        return LargestWord;
+      }
+      console.log(String1("I am a software Developer and lives in Noida"));
+    </script>
+  </body>
+</html>
